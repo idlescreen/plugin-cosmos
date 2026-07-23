@@ -13,7 +13,7 @@ path = "src/lib.rs"
 crate-type = ["cdylib"]
 
 [dependencies]
-trance-api = { path = "../idlescreen/trance-api" }
+trance-api = { path = "../idle-core/trance-api" }
 libc = "0.2"
 
 [build-dependencies]
