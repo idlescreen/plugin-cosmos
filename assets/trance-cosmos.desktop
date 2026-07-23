@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Cosmos
+Comment=Screensaver effect: cosmos
+Exec=trance preview cosmos
+Icon=trance-cosmos
+Terminal=false
+Categories=Screensaver;

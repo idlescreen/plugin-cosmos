@@ -1,0 +1,47 @@
+[package]
+license = "Apache-2.0"
+name = "cosmos"
+version = "1.0.27"
+edition = "2024"
+description = "Accretion disk to collapsed singularity lifecycle"
+publish = false
+autobins = false
+
+[lib]
+name = "screensaver_cosmos"
+path = "src/lib.rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+trance-api = { path = "../idlescreen/trance-api" }
+libc = "0.2"
+
+[build-dependencies]
+embed-resource = "2"
+
+[package.metadata.deb]
+name = "trance-plugin-cosmos"
+maintainer = "idlescreen <jerydleuck@gmail.com>"
+extended-description = "Accretion disk to collapsed singularity lifecycle. Official IdleScreen (Trance) screensaver plugin."
+depends = "libc6"
+section = "utils"
+priority = "optional"
+assets = [
+    ["target/release/libscreensaver_cosmos.so", "usr/libexec/trance/screensavers/libscreensaver_cosmos.so", "644"],
+    ["assets/trance-cosmos.png", "usr/share/pixmaps/trance-cosmos.png", "644"]
+]
+
+[package.metadata.generate-rpm]
+name = "trance-plugin-cosmos"
+release = "1"
+arch = "x86_64"
+summary = "Accretion disk to collapsed singularity lifecycle"
+description = "Accretion disk to collapsed singularity lifecycle"
+license = "Apache-2.0"
+assets = [
+    { source = "target/release/libscreensaver_cosmos.so", dest = "/usr/libexec/trance/screensavers/libscreensaver_cosmos.so", mode = "644", user = "root", group = "root" },
+    { source = "assets/trance-cosmos.png", dest = "/usr/share/pixmaps/trance-cosmos.png", mode = "644", user = "root", group = "root" }
+]
+
+[package.metadata.generate-rpm.requires]
+trance = "*"

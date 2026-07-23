@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screensaver name="trance-cosmos" _label="Cosmos">
+  <command arg="trance start cosmos"/>
+  <_description>
+    Retro terminal screensaver effect (cosmos) from the screensavers collection.
+  </_description>
+</screensaver>
