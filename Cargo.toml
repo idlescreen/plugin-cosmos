@@ -1,7 +1,7 @@
 [package]
 license = "Apache-2.0"
 name = "cosmos"
-version = "2.0.1"
+version = "2.0.2"
 edition = "2024"
 description = "Accretion disk to collapsed singularity lifecycle"
 publish = false
