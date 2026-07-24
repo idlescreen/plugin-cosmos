@@ -1,7 +1,7 @@
 [package]
 license = "Apache-2.0"
 name = "cosmos"
-version = "2.0.0"
+version = "2.0.1"
 edition = "2024"
 description = "Accretion disk to collapsed singularity lifecycle"
 publish = false
@@ -13,7 +13,7 @@ path = "src/lib.rs"
 crate-type = ["cdylib"]
 
 [dependencies]
-trance-api = { path = "../idle/trance-api" }
+idle-api = { path = "../idle/idle-api" }
 libc = "0.2"
 
 [build-dependencies]

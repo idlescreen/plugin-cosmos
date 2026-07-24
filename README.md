@@ -4,7 +4,7 @@ Official **cosmos** visualizer plugin for [IdleScreen](https://github.com/idlesc
 
 ## Build
 
-Requires a sibling checkout of the core daemon for `trance-api`:
+Requires a sibling checkout of the core daemon for `idle-api`:
 
 ```bash
 git clone https://github.com/idlescreen/idle-core.git
@@ -18,8 +18,8 @@ cargo build --release
 After adding the IdleScreen package repository:
 
 ```bash
-sudo apt install trance-saver-cosmos
-# or: sudo dnf install trance-saver-cosmos
+sudo apt install idle-saver-cosmos
+# or: sudo dnf install idle-saver-cosmos
 ```
 
 See [idlescreen.github.io/packages](https://idlescreen.github.io/packages/).
