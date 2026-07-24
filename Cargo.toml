@@ -20,7 +20,7 @@ libc = "0.2"
 embed-resource = "2"
 
 [package.metadata.deb]
-name = "saver-cosmos"
+name = "idle-saver-cosmos"
 provides = "trance-plugin-cosmos"
 replaces = "trance-plugin-cosmos"
 conflicts = "trance-plugin-cosmos (<< 2.0.0)"
@@ -35,19 +35,19 @@ assets = [
 ]
 
 [package.metadata.generate-rpm]
-name = "saver-cosmos"
+name = "idle-saver-cosmos"
 release = "1"
 arch = "x86_64"
 summary = "Accretion disk to collapsed singularity lifecycle"
 description = "Accretion disk to collapsed singularity lifecycle"
 license = "Apache-2.0"
 assets = [
-    { source = "target/release/libscreensaver_cosmos.so", dest = "/usr/libexec/idlescreen/screensavers/libscreensaver_cosmos.so", mode = "644", user = "root", group = "root" },
+    { source = "target/release/libscreensaver_cosmos.so", dest = "/usr/libexec/idle/screensavers/libscreensaver_cosmos.so", mode = "644", user = "root", group = "root" },
     { source = "assets/idlescreen-cosmos.png", dest = "/usr/share/pixmaps/idlescreen-cosmos.png", mode = "644", user = "root", group = "root" }
 ]
 
 [package.metadata.generate-rpm.requires]
-idlescreen = "*"
+idle = "*"
 
 [package.metadata.generate-rpm.provides]
 trance-plugin-cosmos = "*"
